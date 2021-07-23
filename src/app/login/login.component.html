@@ -1,0 +1,11 @@
+<div class="login-container">
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="submitForm()">
+        <div class="icon-container">
+            <img src="./assets/small-facebook-icon-png-6.jpg">
+            <img src="./assets/twitter.png">
+        </div>
+        <input type="text" placeholder="Username" formControlName="username">
+        <input type="text" placeholder="Password" formControlName="password">
+        <button class="login-button" type="submit">Submit</button>
+    </form>
+</div>
